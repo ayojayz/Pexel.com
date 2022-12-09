@@ -1,0 +1,295 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.9em;
+}
+
+h1, h2, h3, h4 {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+p {
+  margin: 10px 0;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+/* Utility classes */
+.container {
+  margin: auto;
+  max-width: 1100px;
+  overflow: hidden;
+  padding: 0 30px;
+}
+
+.text-primary {
+  color: rgb(123, 213, 245);
+}
+
+.lead {
+  font-size: 20px;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 20px;
+  padding: 13px 20px;
+  border: none;
+  cursor: pointer; 
+  margin-bottom: 20px;
+}
+
+.btn-light {
+  background: #f7c08f;
+  color: #333;
+}
+
+.btn-dark {
+  background: #333;
+}
+
+.btn:hover {
+  background: #ff8f40;
+  border-radius: 5px;
+}
+
+.bg-dark {
+  background:rgb(13, 47, 59);
+  color: #fff;
+}
+
+.bg-light {
+  color: #333;;
+  background: #f4f4f4;
+}
+
+.bg-primary{
+  font-size: 30px;
+  color: rgb(123, 213, 245);
+}
+
+.bg-suc {
+  color: rgb(123, 213, 245);
+}
+
+.bg-col {
+  color:#f7c08f;
+}
+
+
+
+/* padding */
+.py-1 {padding: .5rem 0;}
+.py-2 {padding: 1rem 0;}
+.py-3 {padding: 2rem 0;}
+
+
+
+a {
+  color:#fff;
+  text-decoration: none;
+}
+
+#footer {
+  background: #333;
+}
+
+/* Navbar */
+#navbar {
+  background: #333;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  opacity: 0.9;
+  overflow: hidden;
+}
+
+#navbar .nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#navbar .nav-container ul {
+  display: flex;
+}
+
+#navbar .nav-container ul li a {
+  padding: 1rem;
+  font-weight: bold;
+}
+
+#navbar ul li a:hover,
+#navbar ul li a.current {
+  background: #333;
+  color:#f7c08f;
+  border-radius: 4px;
+}
+
+#showcase {
+  background: url(../img/pexels-james-wheeler-1519088.jpg) no-repeat center right/cover;
+  color: #fff;
+  height: 100vh;
+}
+
+.showcase-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  height: 60vh;
+}
+
+
+/* Home Info */
+#home-info .home-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  align-items: center;
+}
+
+/* Wallpapers */
+#wallpapers {
+  background: #ddd;
+}
+
+#wallpapers h3  a{
+  color: rgb(0, 0, 0);
+}
+
+#wallpapers .wall-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  text-align: center;
+}
+
+/* Testimonials */
+#testimonials {
+  background: #ddd;
+}
+
+#testimonials  h2{
+  text-align: center;
+}
+
+#testimonials .testimony {
+  /* padding: 20px; */
+  margin-bottom: 40px;
+  border-radius: 5px;
+  display: flex;
+}
+
+#testimonials .testimony img {
+  flex: 1;
+  width: 80px;
+  border-radius: 50%;
+  margin-right: 2rem;
+}
+
+/* comment-form */
+#footer .comment-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#comment-form {
+  color: #f7c08f;
+}
+
+#comment-form textarea {
+  height: 200px;
+  width: 100%;
+}
+
+#comment-form textarea:focus {
+  outline: none;
+
+}
+
+.footer {
+  height: 100vh;
+}
+
+/* Contact-info */
+#contact-info {
+  font-style: italic;
+}
+
+#contact-info .form-group {
+  margin-bottom: 20px;
+}
+
+#contact-info .form-group label {
+  display: block;
+}
+
+#contact-info .form-group input,
+#contact-info .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+#contact-info .form-group textarea {
+  height: 200px;
+}
+
+#contact-info input:focus,
+#contact-info textarea:focus {
+  border-color:aqua;
+  outline: none;
+}
+
+/* Contact Content */
+#contact-content {
+  background: #333;
+  color: #fff;
+}
+
+#contact-content .contact-container {
+  display: flex;
+}
+
+#contact-content .contact-container div {
+  flex: 1;
+}
+
+.contact-container i {
+  padding: .5rem;
+}
+
+
+
+/* Footer */
+.c013 {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: .5rem;
+}
+
+
+@media(max-width:700px) {
+  #home-info .home-content {
+    grid-template-columns: 1fr;
+  }
+
+  
+}
+
+

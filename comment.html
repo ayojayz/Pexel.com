@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Welcome to my wonderful website" />
+    <meta name="keywords" content="My website" />
+    <script
+      src="https://kit.fontawesome.com/68aaff7d12.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Pexel | Comments</title>
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <div class="container nav-container">
+          <h1 id="logo"><a href="index.html">PEXEL</a></h1>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="current" href="who.html">Who</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section id="footer" class="py-3 footer">
+      <div class="container comment-container">
+        <div id="comment-form">
+          <h4 class="bg-primary">Comment Here</h4>
+          <p>Please fill out this form to comment about our page</p>
+          <form action="process.php">
+            <label for="Comment">Comment</label>
+            <textarea name="comment" id="comment"></textarea>
+            <button type="submit" class="btn">Submit</button>
+          </form>
+        </div>
+        <div class="footer-container">
+          <div class="c013">
+            <p>Pexel &reg; 2022, All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+@media(max-width:700px) {
+  #navbar {
+    align-items: center;
+  }
+  
+  #home-info .home-content {
+    grid-template-columns: 1fr;
+  }
+
+  #wallpapers {
+    padding: 1rem 0;
+  }
+
+  #wallpapers .wall-container > *:first-child,
+  #wallpapers .wall-container > *:nth-child(2),
+  #wallpapers .wall-container > *:last-child {
+    grid-column: 1 / span3;
+  }
+
+  #contact-content .contact-container {
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  #contact-content .contact-container > div {
+    border-bottom: 1px dotted #222;
+    text-align: center;
+  }
+
+
+}
+
+@media(max-width:400px) {
+  #testimonials .testimony {
+    flex-direction: column;
+  }
+}
+
